@@ -1,0 +1,26 @@
+extends layout
+
+block content
+ div
+  p Users
+  table
+   thead
+    tr 
+     th User Name
+     th E-Mail
+   tbody
+    each user in users
+     tr
+      td= user.user_name
+      td= user.email 
+ 
+ div
+  p Add user
+  form(method="POST", action='/addUser')
+   p Enter user name:
+   input(type="text", name="user_name", value=user_name)
+   p Enter email:
+   input(type="text", name="email", value=email)
+   input(type="submit")
+   
+      

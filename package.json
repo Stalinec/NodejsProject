@@ -1,0 +1,13 @@
+{
+  "name": "NodeExpressProject",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "apiai": "^4.0.0",
+    "express": "3.2.6",
+    "jade": "*"
+  }
+}
